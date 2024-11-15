@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Web98 Lite</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="../images/win98logo.png">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form id="windows">
+    <!-- Login and Shutdown -->
+    <input type="checkbox" id="login-screen-input" name="login-screen-input" />
+    <input type="checkbox" id="shutdown-screen-input" name="shutdown-screen-input" />
+    <input type="checkbox" name="start-button-input" id="start-button-input" />
+    <input type="radio" name="update-input" id="update-input" />
+    <div id="background"></div>
+    <!-- Minimize Windows -->
+    <input type="checkbox" id="windows-ie-input-min" name="windows-ie-input-min" />
+    <input type="checkbox" id="windows-documents-input-min" name="windows-documents-input-min" />
+    <input type="checkbox" id="windows-help-input-min" name="windows-help-input-min" /> 
+    <input type="checkbox" id="windows-update-input-min" name="windows-update-input-min" />
+    <input type="checkbox" id="windows-notepad-input-min" name="windows-notepad-min" /> 
+    <input type="checkbox" id="windows-minesweeper-input-min" name="windows-minesweeper-input-min" /> 
+    <input type="checkbox" id="windows-trash-input-min" name="windows-trash-input-min" />
+    <!-- Maximize Windows -->
+    <input type="checkbox" id="windows-ie-input-max" name="windows-ie-input-max" />
+    <input type="checkbox" id="windows-documents-input-max" name="windows-documents-input-max" />
+    <input type="checkbox" id="windows-help-input-max" name="windows-help-input-max" /> 
+    <input type="checkbox" id="windows-update-input-max" name="windows-update-input-max" /> 
+    <input type="checkbox" id="windows-notepad-input-max" name="windows-notepad-max" /> 
+    <input type="checkbox" id="windows-minesweeper-input-max" name="windows-minesweeper-input-max" />
+    <input type="checkbox" id="windows-trash-input-max" name="windows-trash-input-max" />
+    <!-- Window Order -->
+    <input type="radio" id="windows-ie-input-on-top" name="windows-order" /> 
+    <input type="radio" id="windows-documents-input-on-top" name="windows-order" />
+    <input type="radio" id="windows-help-input-on-top" name="windows-order" /> 
+    <input type="radio" id="windows-update-input-on-top" name="windows-order" /> 
+    <input type="radio" id="windows-notepad-input-on-top" name="windows-order" />
+    <input type="radio" id="windows-minesweeper-input-on-top" name="windows-order" /> 
+    <input type="radio" id="windows-trash-input-on-top" name="windows-order" />
+    <!-- Window Visibility -->
+    <input type="checkbox" id="windows-ie-input" name="windows-ie-input" />
+    <input type="checkbox" id="windows-documents-input" name="windows-documents-input" />
+    <input type="checkbox" id="windows-help-input" name="windows-help-input" /> 
+    <input type="checkbox" id="windows-update-input" name="windows-update-input" /> 
+    <input type="checkbox" id="windows-notepad-input" name="windows-notepad-input" />
+    <input type="checkbox" id="windows-minesweeper-input" name="windows-minesweeper-input" />
+    <input type="checkbox" id="windows-trash-input" name="windows-trash-input" />
+
+    <div id="shutdown-screen"><label for="shutdown-screen-input"></div></div>
+    <div id="login-screen">
+        <div id="login-window" class="window windows-box-shadow">
+            <div class="header">Enter Password</div>
+            <div class="content">
+                <img src="../images/MicrosoftWindowsLogo.png" alt="Windows" />
+                <p style="float: right;"><b>Login as:</b></p>
+                <div class="select-box inverse-windows-box-shadow">
+                    <input type="radio" name="users" id="zark-muckerberg" checked />
+                    <input type="radio" name="users" id="donald-trump" />
+                    <input type="radio" name="users" id="spiderman" />
+                    <label for="zark-muckerberg" id="zark-muckerberg-label" />Shaquille Oatmeal</label>
+                    <label for="donald-trump" id="donald-trump-label" />Ronald Rump</label>
+                    <label for="spiderman" id="spiderman-label" />Spooderman</label>
+                </div>
+                <input type="password" class="margin-input inverse-windows-box-shadow" />
+                <div class="ok-cancel">
+                    <label for="login-screen-input" class="windows-box-shadow">OK</label>
+                    <label for="login-screen-input" class="windows-box-shadow">Cancel</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="desktop">
+        <label for="windows-ie-input" class="desktop-item" title="Home of Internet!">
+            <div class="icon"><img src="../images/ielogo.png" alt="Internet Explorer" /></div>
+            <div class="text">Internet Explorer</div>
+        </label>
+        <label for="windows-documents-input" class="desktop-item" title="My Documents">
+            <div class="icon"><img src="../images/mydocuments.png" alt="My Documents" /> </div>
+            <div class="text">Documents</div>
+        </label>
+        <label for="windows-notepad-input" class="desktop-item" title="Notepad">
+            <div class="icon"><img src="../images/notepad.png" alt="Notepad" /> </div>
+            <div class="text">Notepad</div>
+        </label>
+        <label for="windows-minesweeper-input" class="desktop-item" title="Amazing game of MinesweeperLite">
+            <div class="icon"><img src="../images/minesweeper.png" alt="Minesweeper" /> </div>
+            <div class="text">Minesweeper Lite</div>
+        </label>
+        <label for="windows-update-input" class="desktop-item update" title="Get updates of Web98">
+            <div class="icon"><img src="../images/UpdateWindowsLogo.png" alt="Update Web98" /> </div>
+            <div class="text">Update Web98</div>
+        </label>
+        <label for="windows-trash-input" class="desktop-item" title="Just a bin!">
+            <div class="icon"><img src="../images/recyclebin.png" alt="Recycle Bin" /> </div>
+            <div class="text">Recycle Bin</div>
+        </label>
+        <a target="_blank" href="https://github.com/hOMie03/web98lite/" class="desktop-item" title="About Web98">
+            <span class="icon">
+                <img src="../images/article.png" alt="Article" />
+            </span>
+            <span class="text">About Web98Lite</span>
+        </a>
+        <a target="_blank" href="https://youtu.be/Jij5Nzh2Sj4?si=zOvtqQAvYHeSuTVp" class="desktop-item" title="Win98 Commercial">
+            <span class="icon">
+                <img src="../images/win98mediaLogo.png" alt="Media Player" />
+            </span>
+            <span class="text">win98.mp4</span>
+        </a>
+    </div>
+    <div id="all-windows">
+        <div class="window ie windows-box-shadow">
+            <div class="header"><label for="windows-ie-input-on-top">Internet Explorer</label>
+                <div class="header-buttons">
+                    <label for="windows-ie-input-min" class="minimize windows-box-shadow"></label>
+                    <label for="windows-ie-input-max" class="maximize windows-box-shadow"></label>
+                    <label for="windows-ie-input" class="close windows-box-shadow">X</label>
+                </div>
+            </div>
+            <div class="options line">
+                <div class="item">File</div>
+                <div class="item">Edit</div>
+                <div class="item">Views</div>
+                <div class="item">Favorites</div>
+                <div class="item">Tools</div>
+                <div class="item">Help</div>
+                <div class="item float-right"><img src="../images/win98logoBG.png" width="60" alt="" /></div>
+            </div>
+            <div class="options padding">
+                <div class="item">Address</div>
+                <input type="text" class="inverse-windows-box-shadow" value="https://theoldnet.com/" />
+            </div>
+            <div class="content">
+                <iframe src="https://theoldnet.com/lite"></iframe>
+            </div>
+        </div>
+        <div class="window help windows-box-shadow">
+            <div class="header"><label for="windows-help-input-on-top">Web98 Help</label>
+                <div class="header-buttons">
+                    <label for="windows-help-input-min" class="minimize windows-box-shadow"></label>
+                    <label for="windows-help-input-max" class="maximize windows-box-shadow"></label>
+                    <label for="windows-help-input" class="close windows-box-shadow">X</label>
+                </div>
+            </div>
+            <div class="options padding">
+                <div class="item">Location</div>
+                <input type="text" class="inverse-windows-box-shadow" value="General Help" />
+            </div>
+            <div class="tab-box-content">
+                <input name="topics-radio" id="topic-1" type="radio" checked />
+                <input name="topics-radio" id="topic-2" type="radio" />
+                <input name="topics-radio" id="topic-3" type="radio" />
+                <input name="topics-radio" id="topic-4" type="radio" />
+                <input name="topics-radio" id="topic-5" type="radio" />
+                <div class="tab-box">
+                    <div class="tab-header">CSS Windows</div>
+                    <ul class="box">
+                        <li><label for="topic-1"><img src="../images/helpbook.png" alt="" /> What is Web98?</label></li>
+                        <li><label for="topic-2"><img src="../images/helpbook.png" alt="" /> Why can't I move Windows?</label></li>
+                        <li><label for="topic-3"><img src="../images/helpbook.png" alt="" /> What's the use of this?</label></li>
+                        <li><label for="topic-4"><img src="../images/helpbook.png" alt="" /> Why can't I change wallpaper like the good 'ol Windows 98?</label></li>
+                        <li><label for="topic-5"><img src="../images/helpbook.png" alt="" /> Who made Web98?</label></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="topic-1-content">
+                        <h2>What is Web98?</h2>
+                        <p><b><i>Web98</i></b> is the website version of Windows 98 OS, built just for the nostalgia of '90s and Y2K era. This is the lite version of Web98 with limited applications and things to do, which is made purely on HTML and CSS only (a bit of JS for current time display). Full version of Web98 is coming soon! <a href="https://github.com/hOMie03/web98lite" target="_blank">For the source code of Web98Lite, you can click here</a>.</p>
+                    </div>
+                    <div class="topic-2-content">
+                        <h2>Why can't I move windows?</h2>
+                        <p>Although CSS lets you do quite a lot of things, unfortunately drag and drop is not one of them. To enable drag and drop on this version of windows, <a href="https://fjolt.com/series/learn-javascript" target="_blank">please learn Javascript first</a>, and then write the necessary scripts to add drag and drop.</p>
+                    </div>
+                    <div class="topic-3-content">
+                        <h2>What's the use of this?</h2>
+                        <p>Welp. This is just a passtime project I tried to make, which is inspired by <a href="https://98.js.org/" target="_blank">this website</a>. You can just do the same, which is pass the time to relive the nostalgia of Win98, bite-sized. Sooner or later, I will also make the whole version where you can listen to music and play more games than just minesweeper. :P </p>
+                    </div>
+                    <div class="topic-4-content">
+                        <h2>Why can't I change wallpaper like the good 'ol Windows 98?</h2>
+                        <p>Same reason as the second question. We need JS to make it do things like that. Don't worry though, in the full version of Web98, I'll add that feature fs! Stay tuned. :)</p>
+                    </div>
+                    <div class="topic-5-content">
+                        <h2>Who made Web98?</h2>
+                        <p><a href="https://om-auti.vercel.app/" target="_blank">om</a> made Web98, inspired by Windows 98 theme.<br />"<i>I am currently working on making full version of Web98, which will be releasing soon :)</i>", says om (the dev) calmly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="window update windows-box-shadow">
+            <div class="header"><label for="windows-update-input-on-top">Web98 Update</label>
+                <div class="header-buttons">
+                    <label for="windows-update-input-min" class="minimize windows-box-shadow"></label>
+                    <label for="windows-update-input-max" class="maximize windows-box-shadow"></label>
+                    <label for="windows-update-input" class="close windows-box-shadow">X</label>
+                </div>
+            </div>
+            <div class="content">
+                <img src="../images/UpdateProgress.gif" alt="" />
+                <div class="title">Install progress</div>
+                <div id="install-bar">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+                <div class="ok-cancel">
+                    <label for="windows-update-input" class="windows-box-shadow"></label>
+                </div>
+            </div>
+        </div>
+        <div class="window update-successful windows-box-shadow">
+            <div class="header">Web98Lite Updated!
+            </div>
+            <div class="content">
+                Your copy of Web98Lite has been updated successfully. Click "OK" to confirm your update.
+                <div class="ok-cancel">
+                    <label for="update-input" class="windows-box-shadow">OK</label>
+                </div>
+            </div>
+        </div>
+        <div class="window trash windows-box-shadow">
+            <div class="header"><label for="windows-trash-input-on-top">Recycle Bin</label>
+                <div class="header-buttons">
+                    <label for="windows-trash-input-min" class="minimize windows-box-shadow"></label>
+                    <label for="windows-trash-input-max" class="maximize windows-box-shadow"></label>
+                    <label for="windows-trash-input" class="close windows-box-shadow">X</label>
+                </div>
+            </div>
+            <div class="options line">
+                <div class="item">File</div>
+                <div class="item">Edit</div>
+                <div class="item">Views</div>
+                <div class="item">Go</div>
+                <div class="item">Favourites</div>
+                <div class="item">Help</div>
+            </div>
+            <div class="content white">
+                <input type="radio" name="trash-radio" id="windows-11" />
+                <input type="radio" name="trash-radio" id="macos" />
+                <input type="radio" name="trash-radio" id="itunes" />
+                <label class="file windows-11" for="windows-11">
+                    <span class="image"><img src="../images/UpdateWindowsLogo.png" alt="Windows" /></span>
+                    <span class="text">Windows_95.exe</span>
+                </label>
+                <label class="file macos" for="macos">
+                    <span class="image"><img src="../images/macOSLogo.png" alt="Mac OS" /></span>
+                    <span class="text">Mac_OS.exe</span>
+                </label>
+                <label class="file itunes" for="itunes">
+                    <span class="image"><img src="../images/iTunesLogo.png" alt="iTunes" /></span>
+                    <span class="text">itunes.exe</span>
+                </label>
+                <label class="file folder" for="folder">
+                    <span class="image"><img src="../images/mydocuments.png" alt="Folder" /></span>
+                    <span class="text">Homework;)</span>
+                </label>
+            </div>
+        </div>
+        <div class="window documents windows-box-shadow">
+            <div class="header"><label for="windows-documents-input-on-top">Documents</label>
+                <div class="header-buttons">
+                    <label for="windows-documents-input-min" class="minimize windows-box-shadow"></label>
+                    <label for="windows-documents-input-max" class="maximize windows-box-shadow"></label>
+                    <label for="windows-documents-input" class="close windows-box-shadow">X</label>
+                </div>
+            </div>
+            <div class="options line">
+                <div class="item">File</div>
+                <div class="item">Edit</div>
+                <div class="item">Views</div>
+                <div class="item">Go</div>
+                <div class="item">Favourites</div>
+                <div class="item">Help</div>
+            </div>
+            <div class="content white">
+                <input type="radio" name="documents-radio" id="secret-codes" />
+                <input type="radio" name="documents-radio" id="diary" />
+                <label class="file secret-codes" for="secret-codes">
+                    <span class="image"><img src="../images/txtFileLogo.png" alt="" /></span>
+                    <span class="text">Secret_Codes.txt</span>
+                </label>
+                <label class="file diary" for="diary">
+                    <span class="image"><img src="../images/diaryLogo.png" alt="" /></span>
+                    <span class="text">Diary.rtf</span>
+                </label>
+            </div>
+        </div>
+        <div class="window notepad windows-box-shadow">
+            <div class="header"><label for="windows-notepad-input-on-top">Notepad</label>
+                <div class="header-buttons">
+                    <label for="windows-notepad-input-min" class="minimize windows-box-shadow"></label>
+                    <label for="windows-notepad-input-max" class="maximize windows-box-shadow"></label>
+                    <label for="windows-notepad-input" class="close windows-box-shadow">X</label>
+                </div>
+            </div>
+            <div class="options line">
+                <div class="item">File</div>
+                <div class="item">Edit</div>
+                <div class="item">Search</div>
+            </div>
+            <div class="content">
+                <textarea></textarea>
+            </div>
+        </div>
+        <div class="window minesweeper windows-box-shadow">
+            <div class="header"><label for="windows-minesweeper-input-on-top">Minesweeper Lite</label>
+                <div class="header-buttons">
+                    <label for="windows-minesweeper-input-min" class="minimize windows-box-shadow"></label>
+                    <label for="windows-minesweeper-input-max" class="maximize windows-box-shadow"></label>
+                    <label for="windows-minesweeper-input" class="close windows-box-shadow">X</label>
+                </div>
+            </div>
+            <div class="options line">
+                <div class="item">Game</div>
+                <div class="item">Help</div>
+            </div>
+            <input type="radio" name="data-id-1-1" id="data-id-1-1" class="group"><input type="radio" name="data-id-2-1" id="data-id-2-1" class="group"><input type="radio" name="data-id-3-1" id="data-id-3-1" class="group"><input type="radio" name="data-id-4-1" id="data-id-4-1" class="group"><input type="radio" name="data-id-5-1" id="data-id-5-1"><input class="mine" type="radio" name="data-id-6-1" id="data-id-6-1"><input type="radio" name="data-id-7-1" id="data-id-7-1"><input type="radio" name="data-id-8-1" id="data-id-8-1">
+            <input type="radio" name="data-id-1-2" id="data-id-1-2"><input type="radio" name="data-id-2-2" id="data-id-2-2"><input type="radio" name="data-id-3-2" id="data-id-3-2"><input type="radio" name="data-id-4-2" id="data-id-4-2"><input type="radio" name="data-id-5-2" id="data-id-5-2"><input type="radio" name="data-id-6-2" id="data-id-6-2"><input type="radio" name="data-id-7-2" id="data-id-7-2"><input type="radio" name="data-id-8-2" id="data-id-8-2">
+            <input type="radio" name="data-id-1-3" id="data-id-1-3"><input type="radio" name="data-id-2-3" id="data-id-2-3"><input type="radio" name="data-id-3-3" id="data-id-3-3"><input type="radio" name="data-id-4-3" id="data-id-4-3"><input type="radio" name="data-id-5-3" id="data-id-5-3"><input type="radio" name="data-id-6-3" id="data-id-6-3"><input type="radio" name="data-id-7-3" id="data-id-7-3"><input type="radio" name="data-id-8-3" id="data-id-8-3">
+            <input type="radio" name="data-id-1-4" id="data-id-1-4"><input type="radio" name="data-id-2-4" id="data-id-2-4"><input class="mine" type="radio" name="data-id-3-4" id="data-id-3-4"><input type="radio" name="data-id-4-4" id="data-id-4-4"><input type="radio" name="data-id-5-4" id="data-id-5-4"><input type="radio" name="data-id-6-4" id="data-id-6-4"><input class="mine" type="radio" name="data-id-7-4" id="data-id-7-4"><input type="radio" name="data-id-8-4" id="data-id-8-4">
+            <input class="mine" type="radio" name="data-id-1-5" id="data-id-1-5"><input type="radio" name="data-id-2-5" id="data-id-2-5"><input type="radio" name="data-id-3-5" id="data-id-3-5"><input type="radio" name="data-id-4-5" id="data-id-4-5"><input type="radio" name="data-id-5-5" id="data-id-5-5"><input type="radio" name="data-id-6-5" id="data-id-6-5"><input type="radio" name="data-id-7-5" id="data-id-7-5"><input type="radio" name="data-id-8-5" id="data-id-8-5">
+            <input type="radio" name="data-id-1-6" id="data-id-1-6"><input type="radio" name="data-id-2-6" id="data-id-2-6"><input type="radio" name="data-id-3-6" id="data-id-3-6"><input type="radio" name="data-id-4-6" id="data-id-4-6"><input class="mine" type="radio" name="data-id-5-6" id="data-id-5-6"><input type="radio" name="data-id-6-6" id="data-id-6-6"><input class="mine" type="radio" name="data-id-7-6" id="data-id-7-6"><input class="mine" type="radio" name="data-id-8-6" id="data-id-8-6">
+            <input type="radio" name="data-id-1-7" id="data-id-1-7"><input type="radio" name="data-id-2-7" id="data-id-2-7"><input type="radio" name="data-id-3-7" id="data-id-3-7"><input type="radio" name="data-id-4-7" id="data-id-4-7"><input type="radio" name="data-id-5-7" id="data-id-5-7"><input type="radio" name="data-id-6-7" id="data-id-6-7"><input type="radio" name="data-id-7-7" id="data-id-7-7"><input class="mine" type="radio" name="data-id-8-7" id="data-id-8-7">
+            <input type="radio" name="data-id-1-8" id="data-id-1-8"><input type="radio" name="data-id-2-8" id="data-id-2-8"><input class="mine" type="radio" name="data-id-3-8" id="data-id-3-8"><input class="mine" type="radio" name="data-id-4-8" id="data-id-4-8"><input type="radio" name="data-id-5-8" id="data-id-5-8"><input type="radio" name="data-id-6-8" id="data-id-6-8"><input type="radio" name="data-id-7-8" id="data-id-7-8"><input type="radio" name="data-id-8-8" id="data-id-8-8">
+    
+            <div class="score">
+                <div class="scoreboard">
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+                <div class="smiley-face">
+                </div>
+                <div class="scoreboard">
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+
+            <div class="content">
+                <label for="data-id-1-1" class="minesweeper-block" data-type="empty" data-group="1"></label>
+                <label for="data-id-2-1" class="minesweeper-block" data-type="empty" data-group="1"></label>
+                <label for="data-id-3-1" class="minesweeper-block" data-type="empty" data-group="1"></label>
+                <label for="data-id-4-1" class="minesweeper-block" data-type="empty" data-group="1"></label>
+                <label for="data-id-5-1" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-6-1" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-7-1" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-8-1" class="minesweeper-block end" data-type="empty" data-group="2"></label>
+    
+                <label for="data-id-1-2" class="minesweeper-block" data-type="empty" data-group="1"></label>
+                <label for="data-id-2-2" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-3-2" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-4-2" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-5-2" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-6-2" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-7-2" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-8-2" class="minesweeper-block end" data-type="empty" data-group="2"></label>
+    
+                <label for="data-id-1-4" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-2-4" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-3-4" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-4-4" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-5-4" class="minesweeper-block" data-type="empty"></label>
+                <label for="data-id-6-4" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-7-4" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-8-4" class="minesweeper-block end" data-type="1">1</label>
+    
+                <label for="data-id-1-5" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-2-5" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-3-5" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-4-5" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-5-5" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-6-5" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-7-5" class="minesweeper-block" data-type="3">3</label>
+                <label for="data-id-8-5" class="minesweeper-block end" data-type="3">3</label>
+    
+                <label for="data-id-1-6" class="minesweeper-block" data-type="empty" data-group="3"></label>
+                <label for="data-id-2-6" class="minesweeper-block" data-type="empty" data-group="3"></label>
+                <label for="data-id-3-6" class="minesweeper-block" data-type="empty" data-group="3"></label>
+                <label for="data-id-4-6" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-5-6" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-6-6" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-7-6" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-8-6" class="minesweeper-block end" data-type="mine"></label>
+    
+                <label for="data-id-1-7" class="minesweeper-block" data-type="empty" data-group="3"></label>
+                <label for="data-id-2-7" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-3-7" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-4-7" class="minesweeper-block" data-type="3">3</label>
+                <label for="data-id-5-7" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-6-7" class="minesweeper-block" data-type="2">2</label>
+                <label for="data-id-7-7" class="minesweeper-block" data-type="3">3</label>
+                <label for="data-id-8-7" class="minesweeper-block end" data-type="mine"></label>
+    
+                <label for="data-id-1-8" class="minesweeper-block" data-type="empty" data-group="3"></label>
+                <label for="data-id-2-8" class="minesweeper-block" data-type="1" >1</label>
+                <label for="data-id-3-8" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-4-8" class="minesweeper-block" data-type="mine"></label>
+                <label for="data-id-5-8" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-6-8" class="minesweeper-block" data-type="empty"></label>
+                <label for="data-id-7-8" class="minesweeper-block" data-type="1">1</label>
+                <label for="data-id-8-8" class="minesweeper-block end" data-type="1">1</label>
+            </div>
+        </div>    
+    </div>
+</div>
+    <div id="start-bar">
+        <div id="start-button-items">
+            <label id="start-button" class="windows-box-shadow" for="start-button-input"></label>
+            <div id="items">
+                <label for="windows-ie-input-min" class="ie-tab tab windows-box-shadow"><span><img src="../images/ielogo.png" alt="Internet Explorer" /></span><span>Internet Explorer</span></label>
+                <label for="windows-help-input-min" class="help-tab tab windows-box-shadow"><span><img src="../images/helpbook.png" alt="Help" /></span><span>Help Center</span></label>
+                <label for="windows-notepad-input-min" class="notepad-tab tab windows-box-shadow"><span><img src="../images/notepad.png" alt="Notepad" /></span><span>Notepad</span></label>
+                <label for="windows-documents-input-min" class="documents-tab tab windows-box-shadow"><span><img src="../images/mydocuments.png" alt="Documents" /></span><span>Documents</span></label>
+                <label for="windows-update-input-min" class="update-tab tab windows-box-shadow"><span><img src="../images/UpdateWindowsLogo.png" alt="Update Windows" /></span><span>Web98 Update</span></label>
+                <label for="windows-trash-input-min" class="trash-tab tab windows-box-shadow"><span><img src="../images/recyclebin.png" alt="" /></span><span>Recycle Bin</span></label>
+                <label for="windows-minesweeper-input-min" class="minesweeper-tab tab windows-box-shadow"><span><img src="../images/minesweeper.png" alt="" /></span><span>Minesweeper</span></label>
+            </div>
+        </div>
+        <div id="start-menu" class="windows-box-shadow">
+            <div id="windows-start-menu-blue">Web<span>98</span>Lite© <span style="float: right; font-size: medium;">by omi:)</span></div>
+            <ul>
+                <li class="line update"><label for="windows-update-input"><img src="../images/UpdateWindowsLogo.png" style="width: 1.5rem;" alt="" /> Web98 Update</label></li>
+                <li class="programs"><label><img src="../images/ProgramsLogo.png" style="width: 1.5rem;" alt="My Programs" /> Programs</label>
+                    <ul class="windows-box-shadow">
+                        <li><label for="windows-ie-input"><img src="../images/ielogo.png" alt="Internet Explorer" /><input type="checkbox" /> Internet Explorer</label></li>
+                        <li><label for="windows-ie-input"><a class="minesweeper-in-win" href="../minesweeper98/index.html" target="_blank"><img src="../images/minesweeper.png" alt="Minesweeper" /> Minesweeper Full</a></label></li>
+                        <li><label for="windows-notepad-input"><img src="../images/notepad.png" alt="Notepad" /> Notepad</label></li>
+                    </ul>
+                </li>
+                <li><label for="windows-documents-input"><img src="../images/mydocuments.png" style="width: 1.5rem;" alt="Documents" /> Documents</label></li>
+                <li class="line"><label for="windows-help-input"><img src="../images/helpbook.png" style="width: 1.5rem;" alt="Help" /> Help</label></li>
+                <li><label for="login-screen-input"><img src="../images/logout.png" style="margin: 0 0.5rem 0 0;" alt="Log off" /> Log Off<span class="spiderman logout-prompt"> Spooderman...</span><span class="zark-muckerberg logout-prompt"> Shaquille Oatmeal...</span><span class="donald-trump logout-prompt"> Ronald Rump...</span></label></li>
+                <li><label for="shutdown-screen-input"><img src="../images/shutdownLogo.png" style="margin: 0 0.5rem 0 0;" alt="Shutdown" /> Shutdown</label></li>
+            </ul>
+        </div>
+        <div id="time-options" title="Time">
+            <script type="text/Javascript">
+                var currentTime = new Date(), hours = currentTime.getHours(), minutes = currentTime.getMinutes();
+                if (minutes < 10) {minutes = "0" + minutes;}
+                document.write(hours + ":" + minutes)
+            </script>
+        </div>
+    </div>
+</form>
+  
+</body>
+</html>
